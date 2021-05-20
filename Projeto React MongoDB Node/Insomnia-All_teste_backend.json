@@ -1,0 +1,209 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2021-04-29T21:16:25.881Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_1f3318df6e9942eaa6ac3646dd0849a1",
+			"created": 1619645049836,
+			"description": "",
+			"modified": 1619645049836,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_17c95037bdd54d95bdbfa3e66f699d97",
+			"color": null,
+			"created": 1619645049880,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1619645049880,
+			"modified": 1619645049880,
+			"name": "New Environment",
+			"parentId": "wrk_1f3318df6e9942eaa6ac3646dd0849a1",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_322c8a57c7f64c3b87f3f6ffda5f1705",
+			"cookies": [],
+			"created": 1619645049882,
+			"modified": 1619645049882,
+			"name": "Default Jar",
+			"parentId": "wrk_1f3318df6e9942eaa6ac3646dd0849a1",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"created": 1619645081705,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1619645081706,
+			"modified": 1619645081705,
+			"name": "izabela",
+			"parentId": "wrk_1f3318df6e9942eaa6ac3646dd0849a1",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_82d0b41c88f84f1fb4187cbb819b47ae",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n      \n      \"codigo\": 80,\n      \"nomeDoLivro\": \"testefff\",\n      \"autor\": \"teste autor\",\n      \"quantidadeEstoque\": 10,\n      \"vendidos\": 1,\n      \"status\": \"ok\"\n      \n    }\n\n"
+			},
+			"created": 1619645100847,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_83958d2c5e7643da86a409cb8ae6b1a3",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619645100847,
+			"method": "POST",
+			"modified": 1619730258614,
+			"name": "Salvar",
+			"parameters": [],
+			"parentId": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"settingDisableRenderRequestBody": true,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3005/sistema/produtos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f1978167a56a4cdc9c22896a513affd5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1619658966324,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_313ec0d9c19f41e39be0b21e17736996",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619658966324,
+			"method": "GET",
+			"modified": 1619730486485,
+			"name": "Busca",
+			"parameters": [],
+			"parentId": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3005/sistema/produtos/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_34b65ef044d841f3b38b28c02e43fccb",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1619697156040,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7e06db8b6ee54fa1a79fcba7f8957a12",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619697156040,
+			"method": "DELETE",
+			"modified": 1619730780418,
+			"name": "Apagar",
+			"parameters": [],
+			"parentId": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3005/sistema/produtos/608b1f5411925603809125a7",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0977025f0ef94236a4bb8c3e6a48286d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1619730465523,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_313ec0d9c19f41e39be0b21e17736996",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619652033585.5,
+			"method": "GET",
+			"modified": 1619730758016,
+			"name": "Busca por id",
+			"parameters": [],
+			"parentId": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3005/sistema/produtos/608b1f5411925603809125a7",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bc8c4de4b7954444bb6857c774556759",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \n      \"codigo\": 99,\n      \"nomeDoLivro\": \"wwwww\",\n      \"autor\": \"teste autor\",\n      \"quantidadeEstoque\": 10,\n      \"vendidos\": 1,\n      \"status\": \"ok\"\n      \n    }"
+			},
+			"created": 1619730544225,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7e06db8b6ee54fa1a79fcba7f8957a12",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1619678061182,
+			"method": "PUT",
+			"modified": 1619730815352,
+			"name": "Editar/Atualizar",
+			"parameters": [],
+			"parentId": "fld_b31b0ee43b484e17a1b2d0b1b8992cf4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3005/sistema/produtos/608b1f01827d672cf0cf8725",
+			"_type": "request"
+		}
+	]
+}
