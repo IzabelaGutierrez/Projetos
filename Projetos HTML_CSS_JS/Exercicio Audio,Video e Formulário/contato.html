@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Receitas em Casa</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+</head>	
+<body>
+	<img width="450px" center src="receitas.jpg">
+	<div class="qualquer">
+		<header class="qualquer">Receitas Fáceis d+</header>
+		</br>
+		<nav>
+			<a href="index.html">Home</a> ||
+			<a href="receita.html">Receita</a> ||
+			<a href="video.html">Vídeo</a> ||
+			<a href="contato.html">Contato</a> ||
+		</nav>
+		</br>
+
+		<form method="GET" action="localhost">
+			<!-- GET os valores do formulário vão na URL
+			POST os valores do formulário vão num arquivo 
+			exem´plo: autenticar senha, cadastrar usuario, pedido de compra-->
+			<fieldset>
+				<legend>Login: </legend>
+				<label for="txtNome" >Nome: </label>   
+	            <input type="text" name="txtNome"  id="txtNome" maxlength="100" size="30" autofocus="autofocus"
+	            placeholder="Digite seu nome completo" /> <br/>
+	            <label for="txtSenha">Senha: </label>  
+	            <input type="password" name="txtSenha" id="txtSenha" size="40" placeholder="Sua senha deve conter numeros, letras e *" /><br/>	
+	            <label for="txtSenha">E-mail:</label>
+	            <input type="email" name="txtEmail" id="txtEmail" 
+	            oninvalid="alert('E-mail incorreto')" 
+	            required="required" 
+	            value="lala@alalal.com.br" 
+	            autofocus="autofocus" /><br/>				
+			</fieldset>
+			<br/>
+			<br/>
+
+			<fieldset>
+				<LEGEND>Receitas: </LEGEND>
+				Bolos: <input type="checkbox" name="ckbReceitas" value="Bolos" id="ckbBolos" /> ||
+				Doces: <input type="checkbox" name="ckbReceitas" value="Doces" id="ckbDoces" /> ||
+				Pães: <input type="checkbox" name="ckbReceitas" value="Paes" id="ckbPaes" /> ||
+				Salgados: <input type="checkbox" name="ckbReceitas" value="Salgados" id="ckbSalgados" />
+			</fieldset>
+			<br/>
+			<br/>
+
+			<fieldset>
+				<LEGEND>Busque sua Receita favorita: </LEGEND> 
+				Ingrediente: <input list="fruta" name="dtFruta" />		
+				<datalist id="fruta">
+					<option value="Chocolate"></option>
+					<option value="Carne"></option>
+					<option value="Ovos"></option>
+					<option value="Feijão"></option>
+					<option value="Açúcar"></option>
+					<option value="Banana"></option>
+				</datalist>
+				<br/>
+				<br/>
+				<label for="lp1">Receitas Salgadas: </label>
+				<select name="lp1" id="lp1">
+					<option value="Coxinha">Coxinha</option>
+					<option value="Bolo de carne">Bolo de carne</option>
+					<option value="Arroz carreteiro">Arroz carreteiro</option>
+					<option value="Omelete">Omelete</option>
+					<option value="Feijoada">Feijoada</option>
+				</select>
+				<br/>
+				<label>Receitas Doces: </label>
+				<select name="lp2" id="lp2">
+					<optgroup label="lp-Servidor">
+						<option value="Brigadeiro">Brigadeiro</option>
+						<option value="Bombom">Bombom</option>
+						<option value="Sorvete">Sorvete</option>
+					</optgroup>					
+				</select>
+				<br/>
+				<br/>
+
+				<label for="arquivo">Selecione seu arquivo: </label> 
+				<input type="file" name="txtArquivo" />
+			</fieldset>
+			<br/>
+			
+			<label for="txtReceitas">Compartilhe sua receita:</label><br/>
+			<textarea cols="50" rows="10" 
+			name="txtReceitas" id="txtReceitas"
+			placeholder="Escreva aqui"></textarea>
+			<br/>
+	
+			<hr/>
+			
+			<input type="submit" value="Salvar">
+			
+			<button type="reset"> Apagar </button>
+
+		</form>
+		
+		</div>
+		</br>	
+		<footer class="footer">Izabela Gutierrez RM 26502925</footer>
+</body>
+</html>
+
+
+
